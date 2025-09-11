@@ -37,15 +37,15 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested:
+    - Aspect Tested: We have tested the response's ability to explain the basics of OOP in simpler terms. but not in a nicely formatted way.
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: Sysytem is looking for the previous information then it can provide the summary.
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested: I have tested the creative writing of the syatem and generated some image also for the writing
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+    - Aspect Tested: I have tested basic arthematic operations, problem solving capabilities and reasoning.
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested: Tested the formatting capabilities and contextual way it understands the text
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -58,7 +58,10 @@ This "vibe check" now serves as a baseline, of sorts, to help understand what ho
 #### ❓Question #1:
 
 What are some limitations of vibe checking as an evaluation tool?
-##### ✅ Answer:
+##### ✅ Answer: 
+
+Vibe checking acts based on the situation and context. It will not have any context idea until it is provided. In addition, it doesn't have any understanding of specific idea about the current exploring the given topic. Vibe checking is a highly subjective way to form an impression, lacking specific criteria and making it unreliable for consistent evaluation. Because it's based on personal feelings and biases, its results can be easily skewed and are difficult to justify. Therefore, it is not a dependable or rigorous tool for making serious assessments or formal decisions.
+
 
 ### 🚧 Advanced Build (OPTIONAL):
 
@@ -68,14 +71,15 @@ Please make adjustments to your application that you believe will improve the vi
 
 #### 🏗️ Activity #1
 ##### Adjustments Made:
-- _describe adjustment(s) here_
+
+I made two main improvements to your AI Engineer Challenge app. First, I fixed the title issue where your changes weren't showing up after deployment by updating "AI Engineer Challenge Chat" to "AI Engineer Course Application" in all the correct files (App.tsx, index.html, manifest.json, and package.json) that actually get deployed, rather than just the standalone HTML file you were editing. Second, I completely redesigned the welcome message from a basic text greeting to an engaging, step-by-step guide that includes a rocket emoji, numbered instructions for getting started, and a highlighted suggestion box with lightbulb emojis containing specific example questions users can ask - making the app much more welcoming and educational for first-time users learning to build LLM applications.
 
 ##### Results:
-1. _Comment here how the change(s) impacted the vibe check of your system_
-2. 
-3. 
-4. 
-5.
+1. User Experoience Improved: The new welcome message is way more engaging and user-friendly, helping users understand how to interact with the app right away.
+2. Educational Value: The detailed instructions and example questions make it easier for beginners to learn about LLM applications, enhancing the app's educational purpose.
+3. Technical Consistency: Fixing the title across all deployed files ensures consistency and professionalism, which is important for user trust and app credibility.
+4. Visual Appeal: The redesigned welcome message with emojis and a more structured layout makes the app visually appealing and inviting.
+5. Improved User Guidance: The step-by-step instructions and suggestions provide clear guidance for users, reducing confusion and improving the overall user experience.
 
 
 ## Submitting Your Homework
