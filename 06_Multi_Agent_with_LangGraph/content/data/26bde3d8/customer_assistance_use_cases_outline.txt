@@ -1,0 +1,19 @@
+1. **E-commerce**: Assisting customers with orders, returns, payment issues, and product inquiries.
+
+2. **Tech Support**: Helping users troubleshoot software or hardware issues, providing installation guidance, and resolving account-related problems.
+
+3. **Travel and Hospitality**: Managing bookings, providing travel information, and assisting with itinerary changes.
+
+4. **Banking and Finance**: Addressing account inquiries, transaction issues, and providing assistance with loans and mortgages.
+
+5. **Healthcare**: Managing appointment scheduling, answering insurance questions, and providing information on medical services.
+
+6. **Telecommunications**: Assisting with service plans, billing inquiries, and technical support for devices and services.
+
+7. **Insurance**: Helping customers with claims, policy details, and coverage questions.
+
+8. **Education**: Providing information on courses, enrollment processes, and student support services.
+
+9. **Food and Beverage**: Handling orders, delivery issues, and menu inquiries.
+
+10. **Common Customer Service Principles**: Communication, problem-solving, and empathy are essential across all domains to ensure customer satisfaction.
