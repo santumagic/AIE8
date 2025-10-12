@@ -11,10 +11,14 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.class
 =======
 *$py.class
 >>>>>>> s09-assignment
+=======
+*$py.class
+>>>>>>> s10-assignment
 *.so
 .Python
 build/
