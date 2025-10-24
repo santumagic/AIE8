@@ -39,7 +39,23 @@ Run the repository and complete the following:
 Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. Where does the helpfulness evaluator fit in the graph, and under what condition should execution route back to the agent vs. terminate?
 
 ##### ✅ Answer:
-_(enter answer here)_
+**Comparison of the two assistants:**
+- `agent` (simple_agent): Routes directly to END after the agent responds without tool calls
+- `agent_helpful` (agent_with_helpfulness): Adds a helpfulness evaluation node before terminating
+
+**Where the helpfulness evaluator fits:**
+- The `helpfulness` node sits between the agent and the END state
+- It's only triggered when the agent's response contains no tool calls
+- Flow: `agent` → (no tool calls) → `helpfulness` → (decision) → END or back to `agent`
+
+**Routing conditions:**
+- **Route back to agent**: When evaluation returns "N" (not helpful) - response needs improvement
+- **Terminate (END)**: When evaluation returns "Y" (helpful) - response is satisfactory
+- **Safety termination**: Automatically ends after 10 messages to prevent infinite loops
+
+**How it works:**
+- Uses a separate LLM call (gpt-4.1-mini) to evaluate if the final response adequately addresses the initial query
+- Creates a self-critique feedback loop that improves response quality
 
 #### 🏗️ Activity #1 Debugging A Graph
 
@@ -50,7 +66,12 @@ Select the `agent_with_helpfulness` and set one or more interrupts (at least one
 What are your thoughts on when you would use a Before interrupt vs. an After interrupt?
 
 ##### ✅ Answer:
-_(enter answer here)_
+
+From what I understand, Before interrupts pause execution before a node runs, which is useful for inspecting or modifying inputs before they're processed. For example, I could review tool arguments before the agent actually calls an API. I think this is great for approval scenarios where you want to prevent something from happening.
+
+After interrupts pause after a node completes, which makes more sense when you want to inspect the actual results before moving forward. Like checking the helpfulness evaluation result before deciding to loop back or end. This seems better for validation and correction of what already happened.
+
+Overall, I think Before is about controlling inputs (prevention/approval) while After is about reviewing outputs (validation/correction). The key difference is timing - one lets you intervene before action, the other lets you review and correct after.
 
 
 
