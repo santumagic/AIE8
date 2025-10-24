@@ -102,6 +102,6 @@ You can find details [here](https://github.com/langchain-ai/langchain-mcp-adapte
 ✅ Answer:
 
 - **What I Built:** Connected my MCP server to a LangGraph agent so it can intelligently use all the tools (currency converter, password generator, dice roller, web search)
-- **How I Did It:** Created a Jupyter notebook (`MCP_LangGraph_Assignment.ipynb`(https://github.com/santumagic/AIE8/blob/s13-assignment/13_MCP/MCP_LangGraph_Assignment.ipynb)) that connects to the MCP server, loads all the tools, and creates an agent using `langchain-mcp-adapters` with GPT-4o-mini
+- **How I Did It:** Created a Jupyter notebook (`MCP_LangGraph_Assignment.ipynb`)(https://github.com/santumagic/AIE8/blob/s13-assignment/13_MCP/MCP_LangGraph_Assignment.ipynb) that connects to the MCP server, loads all the tools, and creates an agent using `langchain-mcp-adapters` with GPT-4o-mini
 - **Results:** Tested it with different queries - it successfully converted currencies (1000 USD = 152,476 JPY), generated secure passwords, rolled dice, and handled multi-step requests. The agent figured out which tools to use on its own!
 
