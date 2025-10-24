@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+
+# Demo/Test files (keep for development, not for submission)
+langgraph_simple_demo.py
+langgraph_test_demo.py
+langgraph_mcp_app.py
+test_password_simple.py
+test_currency_converter.py
